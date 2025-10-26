@@ -1,0 +1,6 @@
+region        = "us-east-1"
+instance_type = "t3.micro"
+key_name      = "cookmate_new_key"
+repo_url      = "https://github.com/BobbyGeorgeKJ/cookmate-devops.git"
+repo_branch   = "main"
+app_directory = "cookmate-app"

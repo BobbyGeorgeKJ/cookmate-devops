@@ -1,0 +1,42 @@
+.recipe {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .tagline {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  ul, ol {
+    margin-left: 20px;
+    color: #444;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    color: #ff7a59;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .back-btn:hover {
+    text-decoration: underline;
+  }
+  

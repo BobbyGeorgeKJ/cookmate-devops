@@ -1,23 +1,15 @@
-version: "3.8"
-
+version: '3'
 services:
-  backend:
-    build: ./backend
-    container_name: cookmate-backend
-    ports:
-      - "5050:5000"
-    networks:
-      - cookmate-net
-
   frontend:
     build: ./frontend
-    container_name: cookmate-frontend
     ports:
-      - "8080:80"
-    depends_on:
-      - backend
-    networks:
-      - cookmate-net
+      - "3000:80"
+    working_dir: /app
+    command: ["npm", "start"]
 
-networks:
-  cookmate-net:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    working_dir: /app
+    command: ["python3", "app.py"]
